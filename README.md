@@ -27,7 +27,7 @@ efficiency: statistically detectable, not economically exploitable.
 
 ## Files
 - `nyse_emh.R` — original analysis in R
-- `nyse_emh_port.ipynb` — Python port (pandas + statsmodels)
+- `nyse_emh.ipynb` — Python port (pandas + statsmodels)
 - `nyse.csv` — data (exported from the original `.Rda`)
 
 ## Note on reproducibility
