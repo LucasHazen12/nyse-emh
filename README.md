@@ -1,4 +1,4 @@
-# NYSE Efficient Markets Hypothesis — AR(1) Test (R → Python)
+# NYSE Efficient Markets Hypothesis — AR(1) Test (R to Python)
 
 Weak-form test of the Efficient Markets Hypothesis on 689 weeks of NYSE
 weekly closing prices, using an AR(1) model on log returns.
@@ -21,7 +21,7 @@ the published result and get reps translating between the two.
 | R² | 0.004 |
 | Observations | 689 |
 
-β₁ is marginally statistically significant but economically trivial — it
+β₁ is marginally statistically significant but economically trivial, as it
 explains ~0.4% of return variation. The evidence supports weak-form market
 efficiency: statistically detectable, not economically exploitable.
 
@@ -32,6 +32,6 @@ efficiency: statistically detectable, not economically exploitable.
 
 ## Note on reproducibility
 Porting surfaced a one-row difference in how R's `drop_na()` and pandas'
-`dropna()` interact with lag padding — a reminder that "the same analysis"
-across two languages isn't automatically identical; the row counts have to
+`dropna()` interact with lag padding, a reminder that "the same analysis"
+across two languages isn't automatically identical. The row counts have to
 be checked. Both now agree at 689 observations.
